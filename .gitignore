@@ -1,0 +1,36 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+
+# Local project and AI assistant instructions
+AGENTS.md
+**/AGENTS.md
+.agents/
+.codex/
+*CODEX*PROMPT*
+*AI*PROMPT*
+
+# Original design and source asset packs (production copies live in public/)
+FRANCIS_DEV_V2_READY_ASSETS/
+FRANCIS_DEV_V2_Visual_Reference_Pack/
+
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files and tool caches
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.cache/
+.eslintcache
+.vite/
+.idea/
+.vscode/
