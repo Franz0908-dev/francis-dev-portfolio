@@ -7,7 +7,7 @@ export function EducationSection() {
     <section id="education" className="content-section section-card" aria-labelledby="education-title">
       <SectionHeading
         eyebrow="04 / Education"
-        title="A technical foundation still in progress."
+        title="A foundation in computer engineering studies."
         description="Education and verified training presented clearly without implying degree completion."
       />
 

@@ -35,7 +35,7 @@ export function TechStackSection() {
             <Sparkles aria-hidden="true" size={19} />
             <div>
               <h3>AI-assisted development tools</h3>
-              <p>Used for explanation, ideation, code review, debugging support, and validation—with human review and adaptation.</p>
+              <p>Used for explanation, ideation, code generation, debugging support, and validation. Review depth varied by project and is disclosed in each case study.</p>
             </div>
           </div>
           <ul className="technology-grid technology-grid--ai">
