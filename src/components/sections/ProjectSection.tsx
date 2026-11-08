@@ -4,6 +4,8 @@ import {
   CalendarDays,
   ChartNoAxesCombined,
   ClipboardCheck,
+  ExternalLink,
+  GitFork,
   GraduationCap,
   Maximize2,
   MonitorCog,
@@ -13,8 +15,9 @@ import {
   UsersRound,
   X,
 } from 'lucide-react'
-import { academicProject, featuredProject } from '../../data/portfolio'
+import { academicProject, featuredProject, posProject } from '../../data/portfolio'
 import { SectionHeading } from '../ui/SectionHeading'
+import { ActionLink } from '../ui/ActionLink'
 
 interface GalleryImage {
   readonly title: string
@@ -119,7 +122,7 @@ export function ProjectSection() {
       <SectionHeading
         eyebrow="02 / Featured projects"
         title="Practical systems built through teamwork and independent development."
-        description="Two project case studies with selected system screens and clearly separated team and solo development contexts."
+        description="Three project case studies with selected system screens and clearly separated team, solo, and full-stack application contexts."
       />
 
       <div className="project-entry">
@@ -180,6 +183,31 @@ export function ProjectSection() {
         </article>
 
         <ProjectGallery id="bcp-lab-reservation" images={academicProject.gallery} onOpen={openImage} />
+      </div>
+
+      <div className="project-entry">
+        <p className="project-entry__number">Project 03</p>
+        <article className="project-card project-card--pos">
+          <div className="project-card__copy">
+            <div className="project-label"><MonitorCog size={16} /> {posProject.badge}</div>
+            <p className="project-context">{posProject.context}</p>
+            <h3>{posProject.title}</h3>
+            <p>{posProject.description}</p>
+            <div className="project-actions">
+              <ActionLink href={posProject.liveDemo} target="_blank" rel="noopener noreferrer" icon={<ExternalLink size={16} />} variant="primary">Live Demo</ActionLink>
+              <ActionLink href={posProject.github} target="_blank" rel="noopener noreferrer" icon={<GitFork size={16} />}>GitHub</ActionLink>
+              <ActionLink href={posProject.caseStudy} icon={<ClipboardCheck size={16} />}>View Case Study</ActionLink>
+            </div>
+          </div>
+          <div className="project-card__preview">
+            <img src={posProject.gallery[0].image} alt={posProject.gallery[0].alt} width={posProject.gallery[0].width} height={posProject.gallery[0].height} loading="lazy" decoding="async" />
+            <span>{posProject.gallery[0].caption}</span>
+          </div>
+          <div className="project-stack project-stack--pos">
+            <p><PackageSearch aria-hidden="true" size={17} /> Technology stack</p>
+            <ul>{posProject.technologies.map((technology) => <li key={technology}>{technology}</li>)}</ul>
+          </div>
+        </article>
       </div>
 
       {activeImage && (

@@ -66,10 +66,10 @@ export function ProfileSidebar({ activeSection }: ProfileSidebarProps) {
         <ActionLink href={`mailto:${profile.email}`} icon={<Mail size={17} />} variant="primary">
           Contact me
         </ActionLink>
-        <ActionLink href={profile.github} target="_blank" rel="noreferrer" icon={<GitFork size={17} />}>
+        <ActionLink href={profile.github} target="_blank" rel="noopener noreferrer" icon={<GitFork size={17} />}>
           GitHub
         </ActionLink>
-        <ActionLink href={profile.resume} target="_blank" rel="noreferrer" icon={<BookOpen size={17} />}>
+        <ActionLink href={profile.resume} target="_blank" rel="noopener noreferrer" icon={<BookOpen size={17} />}>
           View resume
         </ActionLink>
         <ActionLink href={profile.resume} download="Francis-Lee-Recanil-Resume.pdf" icon={<Download size={17} />}>
