@@ -14,10 +14,10 @@ export function HeroSection() {
           <ActionLink href={`mailto:${profile.email}`} icon={<Mail size={18} />} variant="primary">
             Contact me
           </ActionLink>
-          <ActionLink href={profile.github} target="_blank" rel="noreferrer" icon={<GitFork size={18} />}>
+          <ActionLink href={profile.github} target="_blank" rel="noopener noreferrer" icon={<GitFork size={18} />}>
             GitHub
           </ActionLink>
-          <ActionLink href={profile.resume} target="_blank" rel="noreferrer" icon={<BookOpen size={18} />}>
+          <ActionLink href={profile.resume} target="_blank" rel="noopener noreferrer" icon={<BookOpen size={18} />}>
             View resume
           </ActionLink>
           <ActionLink href={profile.resume} download="Francis-Lee-Recanil-Resume.pdf" icon={<Download size={18} />}>

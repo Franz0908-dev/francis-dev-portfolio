@@ -194,8 +194,8 @@ export function ProjectSection() {
             <h3>{posProject.title}</h3>
             <p>{posProject.description}</p>
             <div className="project-actions">
-              <ActionLink href={posProject.liveDemo} target="_blank" rel="noreferrer" icon={<ExternalLink size={16} />} variant="primary">Live Demo</ActionLink>
-              <ActionLink href={posProject.github} target="_blank" rel="noreferrer" icon={<GitFork size={16} />}>GitHub</ActionLink>
+              <ActionLink href={posProject.liveDemo} target="_blank" rel="noopener noreferrer" icon={<ExternalLink size={16} />} variant="primary">Live Demo</ActionLink>
+              <ActionLink href={posProject.github} target="_blank" rel="noopener noreferrer" icon={<GitFork size={16} />}>GitHub</ActionLink>
               <ActionLink href={posProject.caseStudy} icon={<ClipboardCheck size={16} />}>View Case Study</ActionLink>
             </div>
           </div>

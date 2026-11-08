@@ -24,7 +24,7 @@ export function MobileHeader({ activeSection }: MobileHeaderProps) {
         ))}
       </nav>
       <div className="mobile-header__actions">
-        <a href={profile.github} target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
+        <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
           <GitFork aria-hidden="true" size={19} />
         </a>
         <a href={`mailto:${profile.email}`} aria-label="Email Francis Lee Recanil">

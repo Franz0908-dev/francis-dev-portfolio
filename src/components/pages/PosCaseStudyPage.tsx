@@ -51,8 +51,8 @@ export function PosCaseStudyPage() {
             <h1>{posProject.title}</h1>
             <p className="case-study-lede">A café-focused POS and inventory system designed around variant-level pricing, branch-aware stock, shared packaging, and dependable local checkout workflows.</p>
             <div className="case-study-actions">
-              <a className="action-link action-link--primary" href={posProject.liveDemo} target="_blank" rel="noreferrer"><ExternalLink size={17} /><span>Explore Live Demo</span></a>
-              <a className="action-link action-link--secondary" href={posProject.github} target="_blank" rel="noreferrer"><GitFork size={17} /><span>View GitHub Repository</span></a>
+              <a className="action-link action-link--primary" href={posProject.liveDemo} target="_blank" rel="noopener noreferrer"><ExternalLink size={17} /><span>Explore Live Demo</span></a>
+              <a className="action-link action-link--secondary" href={posProject.github} target="_blank" rel="noopener noreferrer"><GitFork size={17} /><span>View GitHub Repository</span></a>
             </div>
           </div>
           <figure className="case-study-hero__media">
@@ -111,8 +111,8 @@ export function PosCaseStudyPage() {
         </section>
 
         <footer className="case-study-footer">
-          <a className="action-link action-link--primary" href={posProject.liveDemo} target="_blank" rel="noreferrer"><ExternalLink size={17} /><span>Explore Live Demo</span></a>
-          <a className="action-link action-link--secondary" href={posProject.github} target="_blank" rel="noreferrer"><GitFork size={17} /><span>View GitHub Repository</span></a>
+          <a className="action-link action-link--primary" href={posProject.liveDemo} target="_blank" rel="noopener noreferrer"><ExternalLink size={17} /><span>Explore Live Demo</span></a>
+          <a className="action-link action-link--secondary" href={posProject.github} target="_blank" rel="noopener noreferrer"><GitFork size={17} /><span>View GitHub Repository</span></a>
           <a className="action-link action-link--quiet" href="/#project"><ArrowLeft size={17} /><span>Back to Projects</span></a>
         </footer>
 
