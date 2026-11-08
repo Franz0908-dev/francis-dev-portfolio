@@ -138,6 +138,68 @@ export const academicProject = {
   ],
 } as const
 
+export const posProject = {
+  title: '1128 Tea & Café POS V3',
+  context: 'Full-Stack Web Application',
+  badge: 'Interactive Demo',
+  description:
+    'A café-focused point-of-sale and inventory management system with product variants, branch-aware stock, shared packaging inventory, customer management, reporting, and streamlined checkout workflows.',
+  technologies: ['React', 'TypeScript', 'Vite', 'Node.js', 'Express', 'Prisma', 'SQLite'],
+  liveDemo: 'https://1128-pos-demo.vercel.app',
+  github: 'https://github.com/Franz0908-dev/1128-pos-v3',
+  caseStudy: '/projects/1128-pos-v3',
+  gallery: [
+    {
+      title: 'POS workspace',
+      caption: 'Product selection, variant handling, cart state, and checkout workflow in the isolated demo.',
+      image: '/images/1128-pos-v3/pos-workspace.png',
+      alt: '1128 Tea and Cafe POS workspace showing product categories, product variants, cart contents, and checkout controls.',
+      width: 1440,
+      height: 900,
+    },
+    {
+      title: 'Inventory management',
+      caption: 'Branch-aware stock visibility with inventory status and movement actions.',
+      image: '/images/1128-pos-v3/inventory-management.png',
+      alt: '1128 Tea and Cafe inventory management screen showing fictional branch stock records and inventory controls.',
+      width: 1440,
+      height: 900,
+    },
+    {
+      title: 'Product variants',
+      caption: 'Product catalog and variant choices presented within the demo workspace.',
+      image: '/images/1128-pos-v3/product-variants.png',
+      alt: '1128 Tea and Cafe product catalog showing fictional products and variant choices.',
+      width: 1440,
+      height: 900,
+    },
+    {
+      title: 'Reports and analytics',
+      caption: 'Fictional sales and inventory summaries for operational review.',
+      image: '/images/1128-pos-v3/reports-analytics.png',
+      alt: '1128 Tea and Cafe reports screen showing fictional sales and operational analytics.',
+      width: 1440,
+      height: 900,
+    },
+    {
+      title: 'Customer and loyalty',
+      caption: 'Customer records and loyalty context in the isolated demonstration workflow.',
+      image: '/images/1128-pos-v3/customer-loyalty.png',
+      alt: '1128 Tea and Cafe customer management screen showing fictional customer and loyalty information.',
+      width: 1440,
+      height: 900,
+    },
+    {
+      title: 'Mobile experience',
+      caption: 'Responsive POS navigation captured at a 390 by 844 viewport.',
+      image: '/images/1128-pos-v3/mobile-experience.png',
+      alt: '1128 Tea and Cafe POS responsive mobile experience with navigation visible at a 390 by 844 viewport.',
+      width: 390,
+      height: 844,
+    },
+  ],
+} as const
+
 export const technologies: Technology[] = [
   { name: 'React', icon: '/assets/icons/react.svg', iconKind: 'brand' },
   { name: 'TypeScript', icon: '/assets/icons/typescript-official.svg', iconKind: 'official' },

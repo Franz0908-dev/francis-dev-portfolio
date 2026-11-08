@@ -10,10 +10,15 @@ import { ProjectSection } from './components/sections/ProjectSection'
 import { TechStackSection } from './components/sections/TechStackSection'
 import { navigation } from './data/portfolio'
 import { useActiveSection } from './hooks/useActiveSection'
+import { PosCaseStudyPage } from './components/pages/PosCaseStudyPage'
 
 export default function App() {
   const sectionIds = useMemo(() => navigation.map((item) => item.id), [])
   const activeSection = useActiveSection(sectionIds)
+
+  if (window.location.pathname === '/projects/1128-pos-v3') {
+    return <PosCaseStudyPage />
+  }
 
   return (
     <>
