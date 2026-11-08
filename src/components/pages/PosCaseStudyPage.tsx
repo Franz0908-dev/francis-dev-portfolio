@@ -43,7 +43,10 @@ export function PosCaseStudyPage() {
   return (
     <main className="case-study-page">
       <div className="case-study-shell">
-        <a className="case-study-back" href="/#project"><ArrowLeft size={17} /> Back to Projects</a>
+        <nav className="case-study-nav" aria-label="Case study navigation">
+          <a className="case-study-back" href="/"><ArrowLeft size={17} /> Back to Portfolio</a>
+          <a className="case-study-back" href="/#project"><ArrowLeft size={17} /> Back to Projects</a>
+        </nav>
 
         <header className="case-study-hero">
           <div>
@@ -65,7 +68,7 @@ export function PosCaseStudyPage() {
           <div><span>Project type</span><strong>Full-stack web application</strong></div>
           <div><span>Operational model</span><strong>Local Express API + SQLite</strong></div>
           <div><span>Public demo</span><strong>Static isolated simulation</strong></div>
-          <div><span>Primary focus</span><strong>Checkout and inventory rules</strong></div>
+          <div><span>Role</span><strong>Full-stack developer</strong></div>
         </section>
 
         <section className="case-study-section" aria-labelledby="overview-title">
@@ -114,6 +117,7 @@ export function PosCaseStudyPage() {
           <a className="action-link action-link--primary" href={posProject.liveDemo} target="_blank" rel="noopener noreferrer"><ExternalLink size={17} /><span>Explore Live Demo</span></a>
           <a className="action-link action-link--secondary" href={posProject.github} target="_blank" rel="noopener noreferrer"><GitFork size={17} /><span>View GitHub Repository</span></a>
           <a className="action-link action-link--quiet" href="/#project"><ArrowLeft size={17} /><span>Back to Projects</span></a>
+          <a className="action-link action-link--quiet" href="/"><ArrowLeft size={17} /><span>Back to Portfolio</span></a>
         </footer>
 
         {activeImage && <div className="case-study-lightbox" role="dialog" aria-modal="true" aria-labelledby="case-study-lightbox-title" aria-describedby="case-study-lightbox-caption" onMouseDown={(event) => { if (event.target === event.currentTarget) setActiveImage(null) }}>

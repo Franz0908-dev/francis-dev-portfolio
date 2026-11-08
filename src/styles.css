@@ -1739,6 +1739,12 @@ main {
   text-decoration: none;
 }
 
+.case-study-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+
 .case-study-back:hover,
 .case-study-back:focus-visible {
   color: #fff;
@@ -1982,6 +1988,9 @@ main {
 }
 
 .case-study-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   padding-top: 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
