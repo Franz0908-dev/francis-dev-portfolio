@@ -1,24 +1,29 @@
 import type { Certification, NavigationItem, Technology } from '../types/portfolio'
+import { assetUrl } from '../lib/assetUrl'
 
 export const profile = {
   name: 'Francis Lee Recanil',
   role: 'Junior Full Stack Web Developer',
-  headline: 'Junior Full Stack Developer. Focused on Practical Solutions.',
+  headline: 'Junior Full Stack Web Developer',
   introduction:
-    '300-hour full-stack internship experience at Chimes Consulting, with interests in building useful and maintainable web applications.',
+    'I build practical web applications with Laravel, React, and TypeScript. My experience includes a 300-hour internship at Chimes Consulting and a solo academic laboratory reservation prototype.',
   email: 'francislee.0908@gmail.com',
   github: 'https://github.com/Franz0908-dev',
-  resume: '/documents/francis-lee-recanil-resume.pdf',
-  portrait: '/assets/images/profile-approved-neon-avatar.png',
-  hero: '/assets/images/hero-purple-workspace.png',
+  linkedin: 'https://www.linkedin.com/in/francis-lee-recanil-53b77a402/',
+  resume: assetUrl('/documents/francis-lee-recanil-resume-updated.pdf'),
+  portrait: assetUrl('/assets/images/portrait-160.webp'),
+  portraitLarge: assetUrl('/assets/images/portrait-320.webp'),
+  hero: assetUrl('/assets/images/hero-1280.webp'),
+  heroSmall: assetUrl('/assets/images/hero-768.webp'),
+  heroLarge: assetUrl('/assets/images/hero-1672.webp'),
 } as const
 
 export const navigation: NavigationItem[] = [
   { id: 'introduction', label: 'Introduction', shortLabel: 'Home' },
-  { id: 'experience', label: 'Internship Experience', shortLabel: 'Experience' },
   { id: 'project', label: 'Featured Projects', shortLabel: 'Projects' },
-  { id: 'skills', label: 'Tech Stack', shortLabel: 'Skills' },
+  { id: 'skills', label: 'Skills & technologies', shortLabel: 'Skills & technologies' },
   { id: 'education', label: 'Education', shortLabel: 'Education' },
+  { id: 'certifications', label: 'Certifications', shortLabel: 'Certifications' },
   { id: 'contact', label: 'Contact', shortLabel: 'Contact' },
 ]
 
@@ -29,13 +34,12 @@ export const internship = {
   hours: '300 internship hours',
   project: 'Sales and Inventory System',
   summary:
-    'Worked with a development team on a Sales and Inventory System using AI-assisted coding tools. Personally reviewed AI-generated code, tested changes in the running application, and participated in debugging and refinement.',
+    'Contributed to frontend and backend work on a team-built Sales and Inventory System, including implementation, testing, and debugging across product, stock, sales, order, invoice, and reporting workflows.',
   contributions: [
-    'AI-assisted coding workflow',
-    'Personal review of AI-generated code',
+    'Frontend and backend implementation with the team',
+    'Product, inventory, sales, and order workflows',
     'Testing changes in the running application',
-    'Debugging and refinement',
-    'Team collaboration',
+    'Reviewing generated code and debugging issues',
   ],
 } as const
 
@@ -44,7 +48,10 @@ export const featuredProject = {
   context: 'Chimes Consulting Internship',
   badge: 'Team-developed project',
   description:
-    'Collaborated with a development team on a Sales and Inventory System using AI-assisted coding tools. Personally reviewed AI-generated code, tested changes in the running application, and participated in debugging and refinement. The system screens represent team-developed functionality and do not imply sole or complete module ownership.',
+    'A team-built application that brings product records, stock levels, sales, orders, invoices, suppliers, and reporting into one workspace.',
+  problem: 'Sales and stock workflows need connected records so staff can review orders, monitor inventory, and check sales reports.',
+  contribution: 'Contributed to frontend and backend implementation and debugging across product, inventory, sales, order, invoice, and reporting workflows. Reviewed generated code and tested changes in the running application; individual module ownership is not documented.',
+  technologies: ['Laravel 13', 'PHP', 'React 19', 'TypeScript', 'Inertia.js', 'Tailwind CSS 4', 'SQLite', 'Vite'],
   areas: ['Inventory', 'Products', 'Suppliers', 'Dashboard', 'Reports', 'Low-stock alerts'],
   gallery: [
     {
@@ -85,11 +92,13 @@ export const featuredProject = {
 export const academicProject = {
   title: 'BCP Laboratory Reservation System',
   context: 'Solo Academic Project',
-  badge: 'AI-Assisted Development',
+  badge: 'Solo academic prototype',
   description:
     'A web-based academic laboratory reservation and management system featuring calendar-based scheduling, reservation requests, administrative analytics, and equipment management.',
   developmentContext:
-    'Solo academic project developed through an AI-assisted workflow. Directed the implementation process and tested features in the running application; manual source-code review was limited.',
+    'Directed implementation and tested the reservation, calendar, dashboard, and equipment features in the running prototype. Used AI coding tools extensively; manual source-code review was limited.',
+  problem: 'Laboratory bookings need a shared view of availability and a structured way to request time and manage equipment.',
+  history: 'The original academic proposal, titled School Laboratory Reservation System, proposed SQL Server. The later BCP prototype uses SQLite with ASP.NET Core MVC and EF Core. The screenshots show the prototype; they do not establish a production rollout.',
   features: ['Calendar scheduling', 'Reservation requests', 'Administrative analytics', 'Equipment management'],
   technologies: [
     'ASP.NET Core MVC',
@@ -163,14 +172,58 @@ export const aiTools: Technology[] = [
 
 export const education = {
   program: 'Bachelor of Science in Computer Engineering',
-  status: 'Undergraduate Studies — Through Third Year, First Semester',
+  status: 'Undergraduate studies — degree not completed',
   school: 'Bestlink College of the Philippines',
   period: '2022–2025',
 } as const
 
 export const certifications: Certification[] = [
-  { title: '300-Hour Internship Certificate', issuer: 'Chimes Consulting', detail: '2026' },
-  { title: 'Java Programming NC III', issuer: 'TESDA' },
-  { title: 'Full Stack Web Development', issuer: 'Udemy', detail: 'Course Completion' },
-  { title: 'Graphic Design Workshop', issuer: 'Sangguniang Kabataan' },
+  {
+    title: '300-Hour Internship Certificate',
+    issuer: 'Chimes Consulting',
+    detail: 'Certificate of Completion',
+    date: 'August 5, 2026',
+    publicFile: '/certificates/chimes-300-hour-internship.pdf',
+    preview: { image: '/certificates/chimes-300-hour-internship.webp', width: 960, height: 720 },
+  },
+  {
+    title: 'Programming (Java) NC III',
+    issuer: 'TESDA',
+    detail: 'Certificate of Training',
+    date: 'October 11, 2023',
+    publicFile: '/certificates/tesda-programming-java-nc-iii-training.pdf',
+    preview: { image: '/certificates/tesda-programming-java-nc-iii-training.webp', width: 960, height: 708 },
+  },
+  {
+    title: 'Computer Security Incident Handling Level I',
+    issuer: 'TESDA',
+    detail: 'Certificate of Training',
+    date: 'September 3, 2026',
+    publicFile: '/certificates/tesda-computer-security-incident-handling-level-i-training.pdf',
+    preview: { image: '/certificates/tesda-computer-security-incident-handling-level-i-training.webp', width: 960, height: 708 },
+  },
+  {
+    title: 'The Complete Full-Stack Web Development Bootcamp',
+    issuer: 'Udemy',
+    detail: 'Certificate of Completion · 62 hours',
+    date: 'April 13, 2026',
+    publicFile: '/certificates/udemy-complete-full-stack-web-development-bootcamp.pdf',
+    preview: { image: '/certificates/udemy-complete-full-stack-web-development-bootcamp.webp', width: 960, height: 714 },
+  },
+  {
+    title: 'Artistic Graphics Editing Workshop',
+    event: 'Project UnCAGE 1.0: Unravel Communication through Artistic Graphics Editing',
+    issuer: 'Technological University of the Philippines – Manila, in partnership with Sangguniang Kabataan, Barangay Punturin',
+    detail: 'Certificate of Participation',
+    date: 'June 18, 2022',
+    note: 'The supplied workshop document has a blank recipient field.',
+    documentLabel: 'View workshop document',
+    publicFile: '/certificates/artistic-graphics-editing-workshop.pdf',
+    preview: {
+      image: '/certificates/artistic-graphics-editing-workshop.webp',
+      width: 960,
+      height: 722,
+      alt: 'Artistic Graphics Editing Workshop document preview, with blank recipient field',
+    },
+  },
 ]

@@ -3,8 +3,8 @@ import { MobileHeader } from './components/layout/MobileHeader'
 import { MobileNav } from './components/layout/MobileNav'
 import { ProfileSidebar } from './components/layout/ProfileSidebar'
 import { ContactSection } from './components/sections/ContactSection'
+import { CertificationsSection } from './components/sections/CertificationsSection'
 import { EducationSection } from './components/sections/EducationSection'
-import { ExperienceSection } from './components/sections/ExperienceSection'
 import { HeroSection } from './components/sections/HeroSection'
 import { ProjectSection } from './components/sections/ProjectSection'
 import { TechStackSection } from './components/sections/TechStackSection'
@@ -21,12 +21,12 @@ export default function App() {
       <MobileHeader activeSection={activeSection} />
       <div className="site-shell">
         <ProfileSidebar activeSection={activeSection} />
-        <main id="main-content">
+        <main id="main-content" tabIndex={-1}>
           <HeroSection />
-          <ExperienceSection />
           <ProjectSection />
           <TechStackSection />
           <EducationSection />
+          <CertificationsSection />
           <ContactSection />
         </main>
       </div>

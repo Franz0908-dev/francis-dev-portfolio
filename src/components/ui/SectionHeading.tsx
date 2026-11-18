@@ -1,14 +1,14 @@
 interface SectionHeadingProps {
-  eyebrow: string
+  id?: string
+  number: string
   title: string
   description?: string
 }
 
-export function SectionHeading({ eyebrow, title, description }: SectionHeadingProps) {
+export function SectionHeading({ id, number, title, description }: SectionHeadingProps) {
   return (
     <header className="section-heading">
-      <p className="section-eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
+      <h2 id={id}><span className="section-eyebrow">{number} /</span> {title}</h2>
       {description && <p>{description}</p>}
     </header>
   )

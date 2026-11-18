@@ -1,5 +1,6 @@
-import {
+﻿import {
   BookOpen,
+  Award,
   BriefcaseBusiness,
   CodeXml,
   Download,
@@ -7,6 +8,7 @@ import {
   GraduationCap,
   House,
   Layers3,
+  UserRound,
   Mail,
 } from 'lucide-react'
 import { navigation, profile } from '../../data/portfolio'
@@ -19,6 +21,7 @@ const icons = {
   project: CodeXml,
   skills: Layers3,
   education: GraduationCap,
+  certifications: Award,
   contact: Mail,
 }
 
@@ -37,6 +40,8 @@ export function ProfileSidebar({ activeSection }: ProfileSidebarProps) {
         <div className="portrait-frame">
           <img
             src={profile.portrait}
+            srcSet={`${profile.portrait} 160w, ${profile.portraitLarge} 320w`}
+            sizes="144px"
             alt="AI-enhanced portrait of Francis Lee Recanil"
             width="160"
             height="160"
@@ -68,6 +73,9 @@ export function ProfileSidebar({ activeSection }: ProfileSidebarProps) {
         </ActionLink>
         <ActionLink href={profile.github} target="_blank" rel="noreferrer" icon={<GitFork size={17} />}>
           GitHub
+        </ActionLink>
+        <ActionLink href={profile.linkedin} target="_blank" rel="noreferrer" icon={<UserRound size={17} />}>
+          LinkedIn
         </ActionLink>
         <ActionLink href={profile.resume} target="_blank" rel="noreferrer" icon={<BookOpen size={17} />}>
           View resume

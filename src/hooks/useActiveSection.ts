@@ -1,39 +1,40 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import type { SectionId } from '../types/portfolio'
 
 export function useActiveSection(sectionIds: SectionId[]) {
   const [activeSection, setActiveSection] = useState<SectionId>(sectionIds[0])
 
   useEffect(() => {
-    if (!('IntersectionObserver' in window)) return
-
-    const updateAtPageEnd = () => {
-      const pageEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 24
-      if (pageEnd) setActiveSection(sectionIds[sectionIds.length - 1])
+    let frame = 0
+    const update = () => {
+      frame = 0
+      const header = document.querySelector('.mobile-header')
+      const headerBottom = header?.getBoundingClientRect().bottom ?? 0
+      const readingLine = Math.max(0, headerBottom) + Math.min(120, window.innerHeight * 0.2)
+      const sections = sectionIds.map(id => document.getElementById(id)).filter((section): section is HTMLElement => !!section)
+      let current = sections[0]?.id as SectionId | undefined
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= readingLine) current = section.id as SectionId
+      }
+      const atEnd = window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2
+      if (atEnd) current = sections.at(-1)?.id as SectionId | undefined
+      if (current) setActiveSection(current)
     }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
-
-        if (visible) setActiveSection(visible.target.id as SectionId)
-      },
-      { rootMargin: '-24% 0px -58%', threshold: [0.05, 0.25, 0.5] },
-    )
-
-    sectionIds.forEach((id) => {
-      const section = document.getElementById(id)
-      if (section) observer.observe(section)
-    })
-
-    window.addEventListener('scroll', updateAtPageEnd, { passive: true })
-    updateAtPageEnd()
-
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update) }
+    window.addEventListener('scroll', schedule, { passive: true })
+    window.addEventListener('resize', schedule)
+    window.addEventListener('hashchange', schedule)
+    window.addEventListener('pageshow', schedule)
+    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(schedule) : undefined
+    observer?.observe(document.documentElement)
+    schedule()
     return () => {
-      observer.disconnect()
-      window.removeEventListener('scroll', updateAtPageEnd)
+      cancelAnimationFrame(frame)
+      observer?.disconnect()
+      window.removeEventListener('scroll', schedule)
+      window.removeEventListener('resize', schedule)
+      window.removeEventListener('hashchange', schedule)
+      window.removeEventListener('pageshow', schedule)
     }
   }, [sectionIds])
 

@@ -1,0 +1,96 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R /Annots [8 0 R 9 0 R 10 0 R] >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 5463 >>
+stream
+BT /F2 23 Tf 0.15 0.10 0.25 rg 1 0 0 1 43 767.84 Tm (Francis Lee Recanil) Tj ET
+BT /F1 12 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 751.64 Tm (Junior Full Stack Web Developer) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 735.49 Tm (Valenzuela City, Philippines | francislee.0908@gmail.com) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 723.34 Tm (GitHub: github.com/Franz0908-dev) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 711.19 Tm (LinkedIn: Francis Lee Recanil) Tj ET
+0.72 0.65 0.81 RG 43 703.19 m 552.28 703.19 l S
+BT /F2 9.5 Tf 0.26 0.14 0.42 rg 1 0 0 1 43 682.37 Tm (PROFILE) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 666.40 Tm (I build practical web applications with Laravel, React, and TypeScript. My experience includes a 300-hour internship at) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 653.44 Tm (Chimes Consulting and a solo academic laboratory reservation prototype.) Tj ET
+0.72 0.65 0.81 RG 43 642.4449999999999 m 552.28 642.4449999999999 l S
+BT /F2 9.5 Tf 0.26 0.14 0.42 rg 1 0 0 1 43 621.62 Tm (INTERNSHIP EXPERIENCE) Tj ET
+BT /F2 10 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 605.12 Tm (Full Stack Web Developer Intern | Chimes Consulting) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 592.97 Tm (July 18 - August 5, 2026 | 300 internship hours) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 577.01 Tm (Contributed to frontend and backend work on a team-built Sales and Inventory System, including implementation,) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 564.05 Tm (testing, and debugging across product, stock, sales, order, invoice, and reporting workflows.) Tj ET
+0.72 0.65 0.81 RG 43 553.0499999999998 m 552.28 553.0499999999998 l S
+BT /F2 9.5 Tf 0.26 0.14 0.42 rg 1 0 0 1 43 532.22 Tm (SELECTED PROJECTS) Tj ET
+BT /F2 10 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 515.72 Tm (Sales and Inventory System | Team project) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 502.76 Tm (A team-built application that brings product records, stock levels, sales, orders, invoices, suppliers, and reporting into) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 489.80 Tm (one workspace.) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 473.84 Tm (Contributed to frontend and backend implementation and debugging across product, inventory, sales, order, invoice,) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 460.88 Tm (and reporting workflows. Reviewed generated code and tested changes in the running application; individual module) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 447.92 Tm (ownership is not documented.) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 432.77 Tm (Laravel 13 | PHP | React 19 | TypeScript | Inertia.js | Tailwind CSS 4 | SQLite | Vite) Tj ET
+BT /F2 10 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 414.27 Tm (BCP Laboratory Reservation System | Solo academic prototype) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 401.31 Tm (A web-based academic laboratory reservation and management system featuring calendar-based scheduling,) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 388.35 Tm (reservation requests, administrative analytics, and equipment management.) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 372.39 Tm (Directed implementation and tested the reservation, calendar, dashboard, and equipment features in the running) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 359.44 Tm (prototype. Used AI coding tools extensively; manual source-code review was limited.) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 344.29 Tm (ASP.NET Core MVC | C# | EF Core | SQLite | Razor | JavaScript | Bootstrap | FullCalendar | Chart.js) Tj ET
+BT /F1 9 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 329.14 Tm (Original proposal: School Laboratory Reservation System, with SQL Server proposed. The later prototype uses SQLite.) Tj ET
+0.72 0.65 0.81 RG 43 321.13500000000005 m 552.28 321.13500000000005 l S
+BT /F2 9.5 Tf 0.26 0.14 0.42 rg 1 0 0 1 43 300.31 Tm (EDUCATION) Tj ET
+BT /F2 10 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 283.81 Tm (Bachelor of Science in Computer Engineering) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 270.85 Tm (Bestlink College of the Philippines | 2022-2025) Tj ET
+BT /F1 9.6 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 254.89 Tm (Undergraduate studies - degree not completed) Tj ET
+0.72 0.65 0.81 RG 43 243.89000000000007 m 552.28 243.89000000000007 l S
+BT /F2 9.5 Tf 0.26 0.14 0.42 rg 1 0 0 1 43 223.07 Tm (CERTIFICATIONS & TRAINING) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 207.51 Tm (300-Hour Internship Certificate | Chimes Consulting | August 5, 2026 | Certificate of Completion) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 192.96 Tm (Programming \(Java\) NC III | TESDA | October 11, 2023 | Certificate of Training) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 178.40 Tm (Computer Security Incident Handling Level I | TESDA | September 3, 2026 | Certificate of Training) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 163.85 Tm (The Complete Full-Stack Web Development Bootcamp | Udemy | April 13, 2026 | Certificate of Completion | 62 hours) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 149.29 Tm (Artistic Graphics Editing Workshop | Technological University of the Philippines - Manila, in partnership with Sangguniang) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 136.74 Tm (Kabataan, Barangay Punturin | June 18, 2022 | Certificate of Participation | The supplied workshop document has a blank) Tj ET
+BT /F1 9.3 Tf 0.12 0.10 0.16 rg 1 0 0 1 43 124.18 Tm (recipient field.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Title (Francis Lee Recanil | Junior Full Stack Web Developer) /Author (Francis Lee Recanil) >>
+endobj
+8 0 obj
+<< /Type /Annot /Subtype /Link /Rect [43 733.49 272.554 744.49] /Border [0 0 0] /A << /S /URI /URI (mailto:francislee.0908@gmail.com) >> >>
+endobj
+9 0 obj
+<< /Type /Annot /Subtype /Link /Rect [43 721.34 183.058 732.34] /Border [0 0 0] /A << /S /URI /URI (https://github.com/Franz0908-dev) >> >>
+endobj
+10 0 obj
+<< /Type /Annot /Subtype /Link /Rect [43 709.19 161.548 720.19] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/francis-lee-recanil-53b77a402/) >> >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000286 00000 n 
+0000000383 00000 n 
+0000000485 00000 n 
+0000006000 00000 n 
+0000006114 00000 n 
+0000006269 00000 n 
+0000006424 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R /Info 7 0 R >>
+startxref
+6606
+%%EOF

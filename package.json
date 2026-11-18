@@ -9,7 +9,11 @@
     "lint": "eslint .",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest run",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "qa:browser": "node scripts/qa-browser.mjs",
+    "preview:paths": "node scripts/preview.mjs",
+    "prepare:media": "node scripts/prepare-media.mjs",
+    "prepare:resume": "node scripts/prepare-resume.mjs"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
@@ -36,5 +40,8 @@
     "typescript-eslint": "^8.72.1",
     "vite": "^8.3.5",
     "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=24.15.0"
   }
 }

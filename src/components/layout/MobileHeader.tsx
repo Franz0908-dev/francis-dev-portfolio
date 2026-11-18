@@ -1,4 +1,4 @@
-import { GitFork, Mail } from 'lucide-react'
+﻿import { GitFork, UserRound, Mail } from 'lucide-react'
 import { navigation, profile } from '../../data/portfolio'
 import type { SectionId } from '../../types/portfolio'
 
@@ -24,6 +24,9 @@ export function MobileHeader({ activeSection }: MobileHeaderProps) {
         ))}
       </nav>
       <div className="mobile-header__actions">
+        <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile">
+          <UserRound aria-hidden="true" size={19} />
+        </a>
         <a href={profile.github} target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
           <GitFork aria-hidden="true" size={19} />
         </a>
